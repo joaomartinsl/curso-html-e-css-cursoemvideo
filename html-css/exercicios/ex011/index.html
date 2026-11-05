@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídia em HTML</title>
+</head>
+<body>
+    <h1>Mídias em HMTL 5</h1>
+
+    <h2>Imagem dinâmica</h2>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.
+    </p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h2>Reproduzindo áudio</h2>
+    <p>
+        Vamos aprender a reproduzir áudio em HTML 5
+    </p>
+    
+    <audio src="midia/peido.mp3" controls autoplay></audio> <br>
+
+    <!--MP3 ou WAV ou OGG-->
+
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/trilha-sonora.mp3" type="audio/mpeg">
+        <p>Seu navegador não possui suporte para audio MP3! <a href="midia/trilha-sonora.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio> 
+
+    <!--
+        AUTOPLAY não está funcionando; 
+
+        Existem 2 formas de colocar o áudio, mas eu preferi a de cima;
+
+        O preload define se o site ja vai baixar tudo ("auto" e vem de padrão), metadata só informações e none nada;
+
+        O segundo tipo é bom para fazer tipo um IF ELSE, já que se não conseguir baixar, vai passando pra linha de baixo, por isso que esse parágrafo final aí não aparece no site, pois ele conseguiu baixar o arquivo MP3 (só o autoplay que não ta funcionando.);
+    -->
+
+    <h2></h2>
+</body>
+</html>

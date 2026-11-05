@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Vídeos com HTML</title>
+</head>
+<body>
+    <h1>Vídeos</h1>
+
+    <h2>Inserindo vídeos hospedado localmente</h2>
+    <p>
+        Esse vídeo está hospedado no meu próprio servidor:
+    </p>
+    <video width="560" controls poster="imagens/thumb-deitado.png">
+        <source src="midias/video-deitado.mp4" type="video/mp4">
+        <p>Não foi possível carregar o arquivo.mp4 no seu navegador</p>
+    </video>
+    <p>
+        Também há esse vídeo aqui hospedado no meu servidor:
+    </p>
+    <video controls poster="imagens/thumb-levantado.png">
+        <source src="midias/video-levantado-hb.mp4" type="video/mp4">
+        <p>Não foi possível carregar o arquivo.mp4 no seu navegador</p>
+    </video>
+
+    <h2>Inserindo vídeos do Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rx8EhkXk9zs?si=5hWMyxWoAZU5xAnz&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--ABRIR COM LIVE SERVER PARA CONSEGUIR VER-->
+
+    <h2>Inserindo vídeos do Vimeo</h2>
+    <iframe src="https://player.vimeo.com/video/497878896?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="[2020] Animação 3D"></iframe>
+    <!--NÃO PRECISA ABRIR COM LIVE SERVER-->
+</body>
+</html>
